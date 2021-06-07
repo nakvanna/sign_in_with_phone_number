@@ -7,6 +7,8 @@ Flutter sign in to firebase with phone number.
 > - [firebase_core](https://pub.dev/packages/firebase_core). Initialization
 > - [firebase_auth](https://pub.dev/packages/firebase_auth). Store information
 
+### Can learn from [here](https://firebase.flutter.dev/docs/auth/phone/).
+
 ## What you need to do...
   - Register your app to [firebase](https://console.firebase.google.com/). Don't foreget to add keystore!
 
