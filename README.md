@@ -1,6 +1,15 @@
-# sign_in_with_phone_number
+# Sign In with Phone number
 
-A new Flutter project.
+Flutter sign in to firebase with phone number.
+
+## Package Using
+> - [Get CLI](https://pub.dev/packages/get_cli/install). Using for generator.
+> - [firebase_core](https://pub.dev/packages/firebase_core). Initialization
+> - [firebase_auth](https://pub.dev/packages/firebase_auth). Store information
+
+## What you need to do...
+  - Register your app to [firebase](https://console.firebase.google.com/). Don't foreget to add keystore!
+
 
 ## Getting Started
 
