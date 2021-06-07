@@ -42,6 +42,7 @@ class SignInView extends GetView<SignInController> {
                       await controller.verifyPhoneNumber(
                           phoneNumber: controller.phone_number);
                       Get.defaultDialog(
+                        barrierDismissible: false,
                         title: 'Verify',
                         content: TextField(
                           maxLength: 6,
@@ -56,6 +57,7 @@ class SignInView extends GetView<SignInController> {
                         confirm: MaterialButton(
                           onPressed: () async {
                             if (controller.pin_code.length == 6) {
+                              Get.back();
                               await controller.onSubmitVerify(
                                   pin: controller.pin_code);
                             } else {
@@ -81,6 +83,8 @@ class SignInView extends GetView<SignInController> {
             : Center(
                 child: MaterialButton(
                   onPressed: () => controller.signOut(),
+                  color: Colors.red,
+                  splashColor: Colors.purple,
                   child: Text('Sign Out'),
                 ),
               ),
